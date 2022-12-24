@@ -1,0 +1,96 @@
+.likeBtn {
+    position: relative;
+    width: 25px;
+    height: 21px;
+    cursor: pointer;
+}
+:root{
+    --heart-size: 149px;
+}
+
+/* fullLove.css */
+.heart {
+    background-color: #d51111;
+    height: var(--heart-size);
+    width: var(--heart-size);
+    transform: rotate(-45deg) scale(1);
+    display: inline-block;
+}
+
+.heart::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: 0;
+    background-color: inherit;
+    border-radius: 50%;
+    height: var(--heart-size);
+    width: var(--heart-size);
+}
+
+.heart::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -50%;
+    background-color: inherit;
+    border-radius: 50%;
+    height: var(--heart-size);
+    width: var(--heart-size);
+}
+
+/* fullLove.css */
+.heratPop {
+    animation: pulse 1s linear infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: rotate(-45deg) scale(1);
+    }
+
+    10% {
+        transform: rotate(-45deg) scale(1.1);
+    }
+
+    20% {
+        transform: rotate(-45deg) scale(0.9);
+    }
+
+    30% {
+        transform: rotate(-45deg) scale(1.2);
+    }
+
+    40% {
+        transform: rotate(-45deg) scale(0.9);
+    }
+
+    50% {
+        transform: rotate(-45deg) scale(1.1);
+    }
+
+    60% {
+        transform: rotate(-45deg) scale(0.9);
+    }
+
+    70% {
+        transform: rotate(-45deg) scale(1);
+    }
+}
+
+/* fullLove.css */
+.hearts {
+    position: absolute;
+    color: #E7273F;
+    font-size: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fly 3s linear forwards;
+}
+
+@keyframes fly {
+    to {
+        transform: translate(-50%, -50px) scale(0);
+    }
+}

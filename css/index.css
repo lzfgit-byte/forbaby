@@ -1,0 +1,19 @@
+body {
+    background-image: url("../img/background.jpg");
+    /*background-image: linear-gradient(6deg, #214, #000);*/
+    background-size: 100% 100%;
+    overflow: hidden
+}
+
+canvas {
+    display: block;
+}
+
+.startDiv {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: black;
+    filter: opacity(0.9);
+}
